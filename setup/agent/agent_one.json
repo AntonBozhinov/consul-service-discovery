@@ -1,0 +1,8 @@
+{
+    "server": true,
+    "bootstrap_expect": 1,
+    "data_dir": "/tmp/consul",
+    "node_name": "agent-one",
+    "bind_addr": "172.20.20.10",
+    "enable_script_checks": true
+}

@@ -1,0 +1,8 @@
+{
+    "data_dir": "/tmp/consul",
+    "start_join": [
+        "172.20.20.10"
+    ],
+    "client_addr": "0.0.0.0",
+    "enable_script_checks": true
+}

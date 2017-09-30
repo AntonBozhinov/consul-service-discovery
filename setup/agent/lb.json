@@ -1,6 +1,6 @@
 {
     "data_dir": "/tmp/consul",
-    "node_name": "agent-two",
+    "node_name": "load-balancer",
     "bind_addr": "172.20.20.11",
     "start_join": [
         "172.20.20.10"

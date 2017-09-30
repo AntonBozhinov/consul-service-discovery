@@ -1,10 +1,7 @@
 {
-    "bootstrap_expect": 1,
-    "data_dir": "/tmp/consul",
-    "node_name": "local",
+    "ui": true,
     "bind_addr": "172.20.20.01",
-    "start_join": [
-        "172.20.20.10"
-    ],
+    "data_dir": "/tmp/consul",
+    "start_join": ["172.20.20.10"],
     "enable_script_checks": true
 }

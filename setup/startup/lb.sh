@@ -26,5 +26,6 @@ haproxy
 
 echo "START CONSUL TEMPLATE"
 
-consul-template \
--config /vagrant/services/lb/lb.template.hcl & disown
+sudo nohup consul-template \
+-config /vagrant/services/lb/lb.template.hcl \
+</dev/null &>/dev/null &

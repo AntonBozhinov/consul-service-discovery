@@ -2,6 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision "shell", path: "setup/install/docker.sh", privileged: false
   config.vm.provision "shell", path: "setup/install/consul.sh", privileged: false
+  config.vm.provision "shell", path: "setup/install/consul-template.sh", privileged: false
 
   config.vm.define "consul-server" do |cs|
     cs.vm.provision "shell", path: "setup/startup/consul-server.sh"

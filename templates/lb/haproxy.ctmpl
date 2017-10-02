@@ -1,5 +1,5 @@
 global
-    maxconn {{keyOrDefault "/prod/portal/haproxy/maxconn" "4096"}}
+    maxconn {{keyOrDefault "/prod/haproxy/maxconn" "4096"}}
 
 defaults
     mode {{keyOrDefault "/prod/haproxy/mode" "http"}}

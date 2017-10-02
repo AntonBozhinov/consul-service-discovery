@@ -13,6 +13,8 @@ echo "COPY HA-PROXY CONFIGURATION"
 sudo cp -a /vagrant/services/lb/haproxy.cfg /home/vagrant/.
 chmod +x /home/vagrant/haproxy.cfg
 
+
+
 echo "START DOCKER HA-PROXY IMAGE"
 
 docker run -d \
@@ -22,8 +24,7 @@ docker run -d \
 -v /home/vagrant/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
 haproxy
 
-
 echo "START CONSUL TEMPLATE"
 
 consul-template \
--config /vagrant/services/lb/lb.template.hcl
+-config /vagrant/services/lb/lb.template.hcl & disown

@@ -1,8 +1,8 @@
 {
     "service": {
-        "name": "web-nginx",
+        "name": "nginx",
         "port": 8080,
-        "checks": {
+        "check": {
             "http": "http://localhost:8080",
             "interval": "10s"            
         }

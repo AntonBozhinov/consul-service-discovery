@@ -2,7 +2,7 @@
     "data_dir": "/tmp/consul",
     "node_name": "load-balancer",
     "bind_addr": "172.20.20.11",
-    "start_join": [
+    "retry_join": [
         "172.20.20.10"
     ],
     "enable_script_checks": true

@@ -1,6 +1,6 @@
 {
     "data_dir": "/tmp/consul",
-    "start_join": [
+    "retry_join": [
         "172.20.20.10"
     ],
     "disable_remote_exec": false,

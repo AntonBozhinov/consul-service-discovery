@@ -2,6 +2,6 @@
     "ui": true,
     "bind_addr": "172.20.20.01",
     "data_dir": "/tmp/consul",
-    "start_join": ["172.20.20.10"],
+    "retry_join": ["172.20.20.10"],
     "enable_script_checks": true
 }
